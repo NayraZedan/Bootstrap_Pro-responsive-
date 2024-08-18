@@ -1,0 +1,133 @@
+body{
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    font-weight:150;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+.carousel-item img{
+    height: 100vh;
+}
+.carousel-caption{
+    background-color:rgba(7, 7, 7, 0.5);
+}
+.fixed-img{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.fixed-img1{
+    background-image: url(../images/fixed1.jpg);
+}
+[type="image"]{
+    height: 350px;
+}
+.fixed-img2{
+    background-image: url(../images/fixed2.jpg);
+}
+/*  */
+.cardover::after ,.cardover::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    background-color: #59e1e4;
+    opacity: 0.3;
+    transition: 1s;
+}
+.cardover::after{
+    top: 0;
+    left: 0;
+}
+.cardover::before{
+    bottom: 0;
+    right: 0;
+}
+.cardover:hover::after ,.cardover:hover::before {
+    width: 100%;
+    height: 100%;
+}
+/*  */
+.activitycard {
+    height: 430px;
+}
+.card-bg {
+   background-size: cover;
+}
+.card-hover .card-img-overlay {
+    background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #536f83 100%);
+}
+.card-hover:hover {
+ cursor: pointer;
+}
+.card-bg:hover {
+    transform:scale(.9);
+    transition: 1s;
+}
+.card-bg:hover .card-img-overlay {
+    background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, #0c4873 100%);
+}
+.card-hover:hover .card-body {
+   margin-top: 30px;
+   transition: .5s;
+}
+/*  */
+.newscard {
+    min-height: 350px;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+}
+.newscard img{
+    height: 350px;
+}
+.card-line{
+    width:70px ;
+    height: 4px;
+    background-color:#07538a;
+}
+.newscard:hover .card-line{
+    width: 110px;
+    transition: 1s;
+}
+.card-body li{
+    cursor: default;
+}
+.newscard li:hover  {
+    background-color: rgba(83, 83, 83, 0.8) !important;
+}
+/*  */
+.aside-icon {
+    width: 80px;
+    height: 80px;
+}
+.aside-icon a i{
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    color:#0c4873
+}
+.aside-icon:hover{
+    opacity: .7;
+}
+/*  */
+.footer-links i{
+    display: inline-block;
+    font-size: 20px;
+    background-color: rgb(59, 58, 58);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.footer-img{
+    margin-left: 25px;
+}
+.copyright{
+   text-align: end;
+}
+
